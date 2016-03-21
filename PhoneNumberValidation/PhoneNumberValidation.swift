@@ -35,7 +35,6 @@ struct PhoneNumberValidation {
         if trimmedNumber != inputString.first {
             
             print("invalid characters present")
-            print("trimmed: \(trimmedNumber) | input: \(inputString)")
             
             isValid = false
             return isValid
@@ -43,10 +42,8 @@ struct PhoneNumberValidation {
         
         // format the valid number
         let validNumber = formatValidPhoneNumber(trimmedNumber)
-        print(validNumber)
         
         isValid = true
-        
         return isValid
     }
     
@@ -65,7 +62,6 @@ struct PhoneNumberValidation {
         // add area code to start of string
         let aussieAreaCode  = "+61 "
         formattedNumber = formattedNumber.insert(aussieAreaCode, index: 0)
-        //print(formattedNumber)
         
         return formattedNumber
     }

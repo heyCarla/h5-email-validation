@@ -13,8 +13,6 @@ final class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        let textFieldView = TextFieldInputView(frame: self.view.bounds)
-        self.view.addSubview(textFieldView)
     }
 }
 
